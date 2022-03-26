@@ -20,17 +20,30 @@
                 <input id="number" type="number" min="10" max="1000" name="age" placeholder="How old are you?" required>
             </div>
             <div>
+                <label for="">select value</label><br>
                 <select name="value" id="dropdown">
                     <option value="one">one</option>
                     <option value="two">two</option>
                 </select>
             </div>
             <div>
-                <label for="gender" id="gender-label">gender</label>
+                <label for="gender" id="gender-label">gender</label><br>
                 <input type="radio" name="gender" value="male" id="">male
                 <input type="radio" name="gender" value="female" id="">female
 
             </div>
+            <div>
+                <label for="education">education</label><br>
+                <input type="checkbox" name="education" value="highschool" id="">highschool
+                <input type="checkbox" name="education" value="bachelor's" id="">bachelor's
+                <input type="checkbox" name="education" value="masters" id="">masters
+            </div>
+
+            <div>
+                <label for="additionalcomment">additional comment:</label><br>
+                <textarea name="additionalcomment" id="" cols="30" rows="5"></textarea>
+            </div>
+            <button id="submit">submit</button>
 
         </form>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
