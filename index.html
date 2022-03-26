@@ -7,9 +7,31 @@
         <h1 id="title">Welcome</h1>
         <p id="description">Personal Information</p>
         <form id="survey-form">
-            <input id="name" type="text" name="name" placeholder="type your name" required>
-            <input id="email" type="email" name="email" placeholder="Type your E-mail" required> 
-            <input id="number" type="numbre" name="age" placeholder="How old are you?">
+            <div>
+                <label for="name" id="name-label">name</label>
+                <input id="name" type="text" name="name" placeholder="type your name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">email</label>
+                <input id="email" type="email" name="email" placeholder="Type your E-mail" required> 
+            </div>
+            <div>
+                <label for="number"  id="number-label">number</label>
+                <input id="number" type="number" min="10" max="1000" name="age" placeholder="How old are you?" required>
+            </div>
+            <div>
+                <select name="value" id="dropdown">
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                </select>
+            </div>
+            <div>
+                <label for="gender" id="gender-label">gender</label>
+                <input type="radio" name="gender" value="male" id="">male
+                <input type="radio" name="gender" value="female" id="">female
+
+            </div>
+
         </form>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
